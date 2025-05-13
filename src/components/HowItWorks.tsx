@@ -8,14 +8,14 @@ const steps = [
     title: 'Discover a task',
     description: 'Browse open microtasks ranging from bug fixes to feature implementations. Filter by tech stack, difficulty, or bounty amount.',
     icon: FileText,
-    iconColor: 'text-plasma'
+    iconColor: 'text-syrius'
   },
   {
     number: '02',
     title: 'Claim it in Matrix or GitHub',
     description: 'Claim a task through our Matrix chat or directly on GitHub. This reserves the task for you to work on.',
     icon: MessageSquare,
-    iconColor: 'text-quasar'
+    iconColor: 'text-syrius'
   },
   {
     number: '03',
@@ -29,7 +29,7 @@ const steps = [
     title: 'Get paid in crypto',
     description: 'Once your PR is approved, receive instant payment in ZNN, QSR, or stablecoins directly to your wallet.',
     icon: CircleDollarSign,
-    iconColor: 'text-plasma'
+    iconColor: 'text-syrius'
   }
 ];
 
