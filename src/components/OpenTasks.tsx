@@ -85,7 +85,7 @@ const OpenTasks: React.FC = () => {
                     ></div>
                     <span className="text-xs text-muted-foreground">{task.difficulty} • {task.estimatedTime}</span>
                   </div>
-                  <div className="text-sm font-ibm text-plasma">{task.payment}</div>
+                  <div className="text-sm font-ibm text-syrius">{task.payment}</div>
                 </div>
               </div>
             ))}

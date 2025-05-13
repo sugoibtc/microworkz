@@ -7,25 +7,29 @@ const steps = [
     number: '01',
     title: 'Discover a task',
     description: 'Browse open microtasks ranging from bug fixes to feature implementations. Filter by tech stack, difficulty, or bounty amount.',
-    icon: FileText
+    icon: FileText,
+    iconColor: 'text-plasma'
   },
   {
     number: '02',
     title: 'Claim it in Matrix or GitHub',
     description: 'Claim a task through our Matrix chat or directly on GitHub. This reserves the task for you to work on.',
-    icon: MessageSquare
+    icon: MessageSquare,
+    iconColor: 'text-quasar'
   },
   {
     number: '03',
     title: 'Submit code',
     description: 'Complete the task according to requirements and submit your solution via a pull request to the project repository.',
-    icon: Code
+    icon: Code,
+    iconColor: 'text-syrius'
   },
   {
     number: '04',
     title: 'Get paid in crypto',
     description: 'Once your PR is approved, receive instant payment in ZNN, QSR, or stablecoins directly to your wallet.',
-    icon: CircleDollarSign
+    icon: CircleDollarSign,
+    iconColor: 'text-plasma'
   }
 ];
 
@@ -44,8 +48,8 @@ const HowItWorks: React.FC = () => {
                   <span className="text-quasar font-bold text-xl">{step.number}</span>
                   <div className="h-[1px] flex-grow mx-3 bg-border"></div>
                 </div>
-                <div className="mb-4 text-plasma">
-                  <step.icon size={24} />
+                <div className="mb-4">
+                  <step.icon size={24} className={step.iconColor} />
                 </div>
                 <h3 className="text-xl font-ibm font-medium mb-3">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
