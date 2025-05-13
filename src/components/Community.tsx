@@ -14,7 +14,7 @@ const Community: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="terminal hover:border-quasar/30 transition">
               <div className="flex items-center mb-4">
-                <MessageSquare className="h-6 w-6 text-plasma mr-3" />
+                <MessageSquare className="h-6 w-6 text-syrius mr-3" />
                 <h3 className="text-xl font-ibm">Matrix Chat</h3>
               </div>
               <p className="text-muted-foreground mb-6">
@@ -32,7 +32,7 @@ const Community: React.FC = () => {
             
             <div className="terminal hover:border-quasar/30 transition">
               <div className="flex items-center mb-4">
-                <Github className="h-6 w-6 text-plasma mr-3" />
+                <Github className="h-6 w-6 text-syrius mr-3" />
                 <h3 className="text-xl font-ibm">GitHub Organization</h3>
               </div>
               <p className="text-muted-foreground mb-6">
