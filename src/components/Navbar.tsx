@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <nav className="border-b border-border sticky top-0 z-50 bg-intergalactic/90 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <span className="text-xl font-bold font-ibm text-plasma">Micro</span>
+          <span className="text-xl font-bold font-ibm text-syrius">Micro</span>
           <span className="text-xl font-bold font-ibm">Workz</span>
         </div>
         
