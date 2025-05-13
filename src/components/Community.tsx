@@ -12,23 +12,27 @@ const Community: React.FC = () => {
           <p className="text-muted-foreground mb-12">Connect with other contributors and maintainers.</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="terminal hover:border-primary/30 transition">
+            <div className="terminal hover:border-quasar/30 transition">
               <div className="flex items-center mb-4">
-                <MessageSquare className="h-6 w-6 text-primary mr-3" />
+                <MessageSquare className="h-6 w-6 text-plasma mr-3" />
                 <h3 className="text-xl font-ibm">Matrix Chat</h3>
               </div>
               <p className="text-muted-foreground mb-6">
-                Join our Matrix rooms to discuss tasks, get help, and connect with the community.
+                Join our Matrix room to discuss tasks, get help, and connect with the community.
                 Our maintainers are active daily to answer questions.
               </p>
-              <Button variant="outline" className="w-full font-mono">
+              <Button 
+                variant="outline" 
+                className="w-full font-mono"
+                onClick={() => window.open("https://matrix.to/#/#sig-hyperqube:hc1.chat", "_blank")}
+              >
                 Join Matrix Chat
               </Button>
             </div>
             
-            <div className="terminal hover:border-primary/30 transition">
+            <div className="terminal hover:border-quasar/30 transition">
               <div className="flex items-center mb-4">
-                <Github className="h-6 w-6 text-primary mr-3" />
+                <Github className="h-6 w-6 text-plasma mr-3" />
                 <h3 className="text-xl font-ibm">GitHub Organization</h3>
               </div>
               <p className="text-muted-foreground mb-6">
@@ -44,10 +48,10 @@ const Community: React.FC = () => {
           <div className="mt-16 px-6 py-8 terminal text-center">
             <h3 className="text-xl font-ibm mb-4">Ready to start earning?</h3>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Join ZenTaskr today and start completing microtasks to earn crypto rewards while 
+              Join MicroWorkz today and start completing microtasks to earn crypto rewards while 
               contributing to meaningful open source projects.
             </p>
-            <Button size="lg" className="font-mono">Get Started Now</Button>
+            <Button size="lg" className="font-mono bg-quasar hover:bg-quasar/90">Start Building Now</Button>
           </div>
         </div>
       </div>

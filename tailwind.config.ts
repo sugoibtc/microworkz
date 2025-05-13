@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,6 +21,7 @@ export default {
 			fontFamily: {
 				mono: ['JetBrains Mono', 'monospace'],
 				'ibm': ['IBM Plex Mono', 'monospace'],
+				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -66,7 +66,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Custom colors
+                intergalactic: '#151515',
+                quasar: '#0061EB',
+                plasma: '#F91690',
+                syrius: '#19e321',
+                darkbg: '#121212',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

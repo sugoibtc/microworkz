@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 220 14% 10%;
+    --background: 0 0% 7%;
     --foreground: 210 20% 98%;
 
-    --card: 220 14% 13%;
+    --card: 0 0% 9%;
     --card-foreground: 210 20% 98%;
 
-    --popover: 220 14% 10%;
+    --popover: 0 0% 7%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 217 100% 46%;
     --primary-foreground: 210 20% 98%;
 
-    --secondary: 220 14% 16%;
+    --secondary: 0 0% 10%;
     --secondary-foreground: 210 20% 98%;
 
-    --muted: 220 14% 17%;
-    --muted-foreground: 220 14% 70%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 174 75% 46%;
+    --accent: 326 95% 52%;
     --accent-foreground: 210 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
 
-    --border: 220 14% 20%;
-    --input: 220 14% 20%;
-    --ring: 224 76% 48%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 217 100% 46%;
 
     --radius: 0.5rem;
 
@@ -54,7 +54,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-mono;
+    @apply bg-darkbg text-foreground font-mono;
   }
 
   .terminal {
@@ -66,10 +66,14 @@
   }
 
   .glow-effect {
-    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+    text-shadow: 0 0 8px rgba(0, 97, 235, 0.5);
   }
 
   .accent-glow {
-    text-shadow: 0 0 8px rgba(20, 184, 166, 0.5);
+    text-shadow: 0 0 8px rgba(249, 22, 144, 0.5);
+  }
+  
+  .success-glow {
+    text-shadow: 0 0 8px rgba(25, 227, 33, 0.5);
   }
 }

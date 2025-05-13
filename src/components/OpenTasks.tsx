@@ -5,40 +5,31 @@ import { Button } from '@/components/ui/button';
 // Placeholder tasks
 const tasks = [
   {
-    id: 'TASK-426',
-    title: 'Implement WebSocket reconnection logic',
+    id: 'TASK-267',
+    title: 'Pillar Status Dashboard',
     repo: 'zenon-network/syrius',
     difficulty: 'Medium',
-    payment: '42 ZNN',
-    estimatedTime: '2-4 hours',
-    tags: ['typescript', 'websockets']
+    payment: '150 ZNN',
+    estimatedTime: '4-8 hours',
+    tags: ['react', 'typescript', 'api']
   },
   {
-    id: 'TASK-389',
-    title: 'Fix markdown rendering in documentation',
-    repo: 'zenon-network/docs',
-    difficulty: 'Easy',
-    payment: '15 ZNN',
-    estimatedTime: '1-2 hours',
-    tags: ['markdown', 'frontend']
-  },
-  {
-    id: 'TASK-405',
-    title: 'Add unit tests for transaction signing',
-    repo: 'zenon-network/znn.js',
+    id: 'TASK-268',
+    title: 'Governance CLI Tool',
+    repo: 'zenon-network/znn-cli',
     difficulty: 'Medium',
-    payment: '35 ZNN',
-    estimatedTime: '3-5 hours',
-    tags: ['javascript', 'testing']
+    payment: '100 ZNN',
+    estimatedTime: '3-6 hours',
+    tags: ['go', 'cli', 'testing']
   },
   {
-    id: 'TASK-412',
-    title: 'Optimize database queries for node API',
-    repo: 'zenon-network/zenon-node',
-    difficulty: 'Hard',
-    payment: '75 ZNN',
-    estimatedTime: '5-8 hours',
-    tags: ['go', 'database']
+    id: 'TASK-269',
+    title: 'HQZ Contract Test Suite',
+    repo: 'zenon-network/hyperqube',
+    difficulty: 'Easy',
+    payment: '80 ZNN',
+    estimatedTime: '2-4 hours',
+    tags: ['solidity', 'testing']
   }
 ];
 
@@ -50,19 +41,19 @@ const OpenTasks: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold font-ibm mb-2">Open Tasks</h2>
-              <p className="text-muted-foreground">Start earning by completing these available microtasks.</p>
+              <p className="text-muted-foreground">Start earning by completing these high-impact microtasks.</p>
             </div>
             <Button variant="outline" className="mt-4 md:mt-0 font-mono">
               View All Tasks
             </Button>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {tasks.map((task) => (
-              <div key={task.id} className="terminal group transition-all hover:border-primary/50">
+              <div key={task.id} className="terminal group transition-all hover:border-quasar/50">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="font-ibm font-medium text-lg mb-1 group-hover:text-primary transition-colors">
+                    <h3 className="font-ibm font-medium text-lg mb-1 group-hover:text-quasar transition-colors">
                       {task.title}
                     </h3>
                     <div className="text-sm text-muted-foreground mb-2">
@@ -87,21 +78,21 @@ const OpenTasks: React.FC = () => {
                     <div className="h-2 w-2 rounded-full mr-2" 
                       style={{ 
                         backgroundColor: 
-                          task.difficulty === 'Easy' ? '#10B981' : 
+                          task.difficulty === 'Easy' ? '#19e321' : 
                           task.difficulty === 'Medium' ? '#FBBF24' : 
-                          '#EF4444' 
+                          '#F91690' 
                       }}
                     ></div>
                     <span className="text-xs text-muted-foreground">{task.difficulty} • {task.estimatedTime}</span>
                   </div>
-                  <div className="text-sm font-ibm text-accent">{task.payment}</div>
+                  <div className="text-sm font-ibm text-plasma">{task.payment}</div>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="flex justify-center mt-10">
-            <Button className="font-mono">Browse All Tasks</Button>
+            <Button className="font-mono bg-quasar hover:bg-quasar/90">Browse All Tasks</Button>
           </div>
         </div>
       </div>

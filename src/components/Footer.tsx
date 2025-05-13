@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <div className="flex items-center space-x-2 mb-3">
-                <span className="text-xl font-bold font-ibm text-accent">Zen</span>
-                <span className="text-xl font-bold font-ibm">Taskr</span>
+                <span className="text-xl font-bold font-ibm text-plasma">Micro</span>
+                <span className="text-xl font-bold font-ibm">Workz</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 The fastest way to earn while building open source.
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               <div>
                 <h4 className="font-ibm font-medium mb-3">Community</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-foreground transition">Matrix Chat</a></li>
+                  <li><a href="https://matrix.to/#/#sig-hyperqube:hc1.chat" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition">Matrix Chat</a></li>
                   <li><a href="#" className="hover:text-foreground transition">GitHub</a></li>
                   <li><a href="#" className="hover:text-foreground transition">Twitter</a></li>
                   <li><a href="#" className="hover:text-foreground transition">Blog</a></li>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                   <li><a href="#" className="hover:text-foreground transition">Privacy Policy</a></li>
                   <li><a href="#" className="hover:text-foreground transition">Terms of Service</a></li>
                   <li><a href="#" className="hover:text-foreground transition">Developer API</a></li>
-                  <li><a href="#" className="hover:text-foreground transition">FAQ</a></li>
+                  <li><a href="#faq" className="hover:text-foreground transition">FAQ</a></li>
                 </ul>
               </div>
             </div>
@@ -52,11 +52,11 @@ const Footer: React.FC = () => {
           
           <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
             <div className="mb-4 md:mb-0">
-              © 2025 ZenTaskr. All rights reserved.
+              © 2025 MicroWorkz. All rights reserved.
             </div>
             <div className="flex items-center space-x-6">
               <span className="animate-pulse-slow inline-flex items-center">
-                <span className="h-2 w-2 rounded-full bg-accent mr-2"></span>
+                <span className="h-2 w-2 rounded-full bg-syrius mr-2"></span>
                 Network Status: Online
               </span>
               <span>Built on Zenon Network</span>
