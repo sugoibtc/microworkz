@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
     <div className="container mx-auto px-4 py-20 md:py-32">
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-block px-3 py-1 mb-6 rounded-full bg-muted text-muted-foreground text-xs">
-          <span className="text-syrius">•</span> NOW LAUNCHING
+          <span className="text-syrius">•</span> LAUNCHING ZOON
         </div>
         
         <h1 className="text-3xl md:text-5xl font-bold mb-6 font-ibm leading-tight">
