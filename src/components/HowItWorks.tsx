@@ -59,9 +59,9 @@ const HowItWorks: React.FC = () => {
           
           <div className="mt-16 terminal">
             <div className="flex items-center mb-4">
-              <div className="h-3 w-3 rounded-full bg-destructive mr-2"></div>
-              <div className="h-3 w-3 rounded-full bg-plasma mr-2"></div>
-              <div className="h-3 w-3 rounded-full bg-quasar"></div>
+              <div className="h-3 w-3 rounded-full bg-[#FF605C] mr-2"></div>
+              <div className="h-3 w-3 rounded-full bg-[#FFBD44] mr-2"></div>
+              <div className="h-3 w-3 rounded-full bg-[#00CA4E]"></div>
             </div>
             <div className="code-block font-mono space-y-2">
               <div className="flex">
