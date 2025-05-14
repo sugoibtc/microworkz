@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
         </h1>
         
         <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-          Complete small, high-impact tasks and get paid instantly in ZNN, QSR, or stablecoins.
+          Complete small, high-impact tasks and get paid instantly in BTC, ZNN, QSR, or stablecoins.
           No bureaucracy, just code.
         </p>
         
@@ -25,9 +25,11 @@ const HeroSection: React.FC = () => {
             Browse Tasks
             <ArrowRight size={18} className="ml-2" />
           </Button>
+        <a href="http://t.me/zenonnetwork" target="_blank" rel="noopener noreferrer">
           <Button variant="outline" className="text-md font-mono py-6 px-8 border-syrius/30 hover:bg-syrius/10">
             Join the Community
           </Button>
+        </a>
         </div>
         
         <div className="mt-16 pt-8 border-t border-border flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
